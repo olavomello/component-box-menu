@@ -7,13 +7,22 @@ import "./styles.css";
 function App() {
   return (
     <div className="menu">
-      <Box title="Sobre" desc="Clique e saiba mais sobre a empresa." />
-      <Box title="Produtos" desc="Acesse agora nosso catálogo de produtos." />
+      <Box
+        title="Sobre"
+        desc="Clique e saiba mais sobre a empresa."
+        route="sobre"
+      />
+      <Box
+        title="Produtos"
+        desc="Acesse agora nosso catálogo de produtos."
+        route="produtos"
+      />
       <Box
         title="Artigos & Notícias"
         desc="Confira nossas últimas novidades."
+        route="noticias"
       />
-      <Box title="Contato" desc="Entre em contato conosco." />
+      <Box title="Contato" desc="Entre em contato conosco." route="contato" />
     </div>
   );
 }
