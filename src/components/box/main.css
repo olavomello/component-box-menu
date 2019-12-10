@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Gelasio&display=swap");
+
+.box {
+  font-family: "Gelasio", serif;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2% 6%;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 1%;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+  text-align: left;
+
+  /* Transition */
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+  /* Color anim */
+  background: linear-gradient(309deg, #ffffff, #ececec);
+  background-size: 400% 400%;
+
+  -webkit-animation: anim_color 16s ease infinite;
+  -moz-animation: anim_color 16s ease infinite;
+  -o-animation: anim_color 16s ease infinite;
+  animation: anim_color 16s ease infinite;
+
+  @-webkit-keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+  @-moz-keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+  @-o-keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+  @keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+}
+.box:hover {
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+  text-align: left;
+  padding: 6% 6%;
+  background: linear-gradient(309deg, #4a1198, #280056);
+
+  @-webkit-keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+  @-moz-keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+  @-o-keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+  @keyframes anim_color {
+    0% {
+      background-position: 4% 0%;
+    }
+    50% {
+      background-position: 97% 100%;
+    }
+    100% {
+      background-position: 4% 0%;
+    }
+  }
+}
+.box h1,
+.box h2,
+.box h3,
+.box h4 {
+  margin: 1% 0;
+}
+.box p {
+  margin: 1% 0 2%;
+}
