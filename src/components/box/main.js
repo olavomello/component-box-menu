@@ -3,16 +3,26 @@ import React, { Component } from "react";
 import "./main.css";
 
 class Box extends Component {
+  // Router
+  state = {
+    navigate: false,
+    route: ""
+  };
+
   // Click action
-  acessar(route, url) {
+  go(route, url) {
     // Check if button is an URL or ROUTE
     if (route) {
       // ROUTE
-      console.log("Route : " + route);
+      console.log("Access Route : " + route);
+      this.setState({
+        navigate: true,
+        route: this.route
+      });
     } else {
       // URL
-      console.log("URL : " + url);
-      location = url;
+      console.log("Goto URL : " + url);
+      window.location = url;
     }
   }
 
@@ -20,7 +30,7 @@ class Box extends Component {
     return (
       <div
         className="box"
-        onClick={() => this.acessar(this.props.route, this.props.url)}
+        onClick={() => this.go(this.props.route, this.props.url)}
       >
         <h2>{this.props.title}</h2>
         <p>{this.props.desc}</p>
