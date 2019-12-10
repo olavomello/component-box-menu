@@ -23,6 +23,11 @@ function App() {
         route="noticias"
       />
       <Box title="Contato" desc="Entre em contato conosco." route="contato" />
+      <Box
+        title="GitHub"
+        desc="Acesse nosso GitHub."
+        url="https://github.com/olavomello/component-box-menu"
+      />
     </div>
   );
 }

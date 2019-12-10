@@ -125,10 +125,7 @@
     }
   }
 }
-.box h1,
-.box h2,
-.box h3,
-.box h4 {
+.box h2 {
   margin: 1% 0;
 }
 .box p {
